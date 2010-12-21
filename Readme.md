@@ -16,6 +16,26 @@ To install this package, simply run:
 
     npm install nix
 
+### Example
+
+Using this module, forking a running node.js process is as simple as:
+
+    var nix = require('nix');
+    var pid = nix.fork();
+    if (pid == 0) {
+      // this is the child process, pid = 0
+    } else {
+      // this is the parent process, pid = child pid
+    }
+
+Calling this after creating and listening on a simple http/tcp server should
+work as expected for most parts.
+
+If you plan on calling this during a tcp/http request, make sure that you
+`destroy()` this stream in either the parent or the child. Otherwise
+both of them will try to watch the socket, causing packets to randomly be
+seen by either process.
+
 ## API
 
 ### nix.fork();
