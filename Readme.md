@@ -5,8 +5,10 @@
 This is a collection of non-portable *nix functions.
 
 Ryan has stated that he does not want anything in node that cannot be ported
-to windows. So I have started this addon for functions that are commonly found
-in the standard libraries of other languages.
+to windows. So I have started this addon for *nix functions that are commonly
+found in the standard libraries of other languages.
+
+Feel free to suggest additional functions via pull requests / issue tickets!
 
 ## Install
 
