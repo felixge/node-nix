@@ -21,6 +21,7 @@ To install this package, simply run:
 Using this module, forking a running node.js process is as simple as:
 
     var nix = require('nix');
+
     var pid = nix.fork();
     if (pid == 0) {
       // this is the child process, pid = 0
