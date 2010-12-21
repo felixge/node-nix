@@ -33,8 +33,8 @@ Calling this after creating and listening on a simple http/tcp server should
 work as expected for most parts. That is, requests will be randomly
 distributed to the new child and parent process by the kernel.
 
-If you plan on calling this during a tcp/http request, make sure that you
-`destroy()` this stream in either the parent or the child. Otherwise
+However, if you plan on calling this during a tcp/http request, make sure that
+you `destroy()` this stream in either the parent or the child. Otherwise
 both of them will try to watch the socket, causing packets to randomly be
 seen by either process.
 
