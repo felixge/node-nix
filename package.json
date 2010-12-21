@@ -1,0 +1,10 @@
+{ "name": "nix"
+ , "description":  "Node.js bindings for non-portable *nix functions"
+ , "version":  "0.0.1"
+ , "author": "Felix Geisendörfer <felix@debuggable.com>"
+ , "keywords": ["unix", "linux"]
+ , "scripts": {
+   "preinstall": "make"
+ }
+ , "main": "./build/default/nix.node"
+}
