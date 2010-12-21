@@ -8,6 +8,12 @@ Ryan has stated that he does not want anything in node that cannot be ported
 to windows. So I have started this addon for functions that are commonly found
 in the standard libraries of other languages.
 
+## Install
+
+To install this package, simply run:
+
+    npm install nix
+
 ## API
 
 ### nix.fork();
