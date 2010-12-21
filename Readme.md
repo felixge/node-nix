@@ -30,6 +30,9 @@ parent process. All I/O watchers will be left in-tact, so you need to
 understand what this means when calling this function during the runtime
 phase of your program.
 
+This function is blocking and takes ~3-4ms per call in my benchmarks. Making
+it non-blocking would be rather [stupid idea](http://unix.derkeiler.com/Newsgroups/comp.unix.programmer/2003-09/0672.html).
+
 **Warning:** Do not call this function from the repl on OSX, unless you want
 to trigger a kernel panic.
 
