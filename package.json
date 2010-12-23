@@ -1,6 +1,6 @@
 { "name": "nix"
  , "description":  "Node.js bindings for non-portable *nix functions"
- , "version":  "0.0.2"
+ , "version":  "0.0.3"
  , "author": "Felix Geisendörfer <felix@debuggable.com>"
  , "keywords": ["unix", "linux"]
  , "scripts": {
